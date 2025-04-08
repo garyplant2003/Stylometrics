@@ -2,7 +2,7 @@
 
 *Exploring [K2-Sonnet's](https://github.com/K2/Stylometrics) innovative approach to digital rights management, content attribution, and DLP without compromising user experience*
 
-![Digital Fingerprinting Concept](https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.1&auto=format&fit=crop&w=1200&q=80)
+![Digital Fingerprinting Concept](accessed.png)
 
 ## The Invisible Guardian of Digital Content
 

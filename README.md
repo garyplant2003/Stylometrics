@@ -1,6 +1,8 @@
 # Stylometrics
 Stylometric Stenography LLM Generation Attribution DRM/DLP
 # Steganographic Encoding API Notes
+ 
+![Digital Fingerprinting Concept](accessed.png)
 
 ## Modules
 
