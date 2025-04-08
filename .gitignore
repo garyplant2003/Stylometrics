@@ -1,3 +1,68 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.npm
+
+# TypeScript/JavaScript build artifacts
+dist/
+build/
+*.js
+*.js.map
+# Keep JavaScript files in specific directories if needed
+!scripts/*.js
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Editor/IDE specific files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.sublime-project
+*.sublime-workspace
+.history/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test outputs
+coverage/
+.nyc_output/
+
+# Generated demo files
+demo-outputs/
+*.output.txt
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional dependencies cache
+.eslintcache
+.stylelintcache
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Documentation generation
+docs/generated/
+
 genaiscript.d.ts
 tsconfig.json
 jsconfig.json
