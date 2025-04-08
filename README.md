@@ -1,3 +1,11 @@
+# K2-Sonnet Stylometrics
+
+Multi-layered steganographic encoding system for resilient content attribution, metadata persistence, and digital rights management.
+
+## ⚠️ IMPORTANT NOTICE
+
+**This project is experimental and provided for research purposes only.** The steganographic techniques implemented here have not been comprehensively tested against all detection methods. See the [full disclaimer](DISCLAIMER.md) for important information about limitations, lack of warranty, and use-at-your-own-risk considerations.
+
 # Stylometrics
 Stylometric Stenography LLM Generation Attribution DRM/DLP
 # Steganographic Encoding API Notes
